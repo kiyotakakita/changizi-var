@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Golden VAR - 構図解析・リアルタイム映像チェッカー</title>
+    <meta name="description" content="MediaPipe顔追尾と幾何学グリッド（黄金螺旋・黄金三角形・三分割法・3Dチャンギージーハート）によるリアルタイムVAR構図批評Webアプリ" />
+    <meta property="og:title" content="Golden VAR - 構図解析・リアルタイム映像チェッカー" />
+    <meta property="og:description" content="MediaPipe顔追尾と幾何学グリッド（黄金螺旋・黄金三角形・三分割法・3Dチャンギージーハート）によるリアルタイムVAR構図批評Webアプリ" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="GoldenVAR" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- MediaPipe Face Mesh & Camera Utils via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-zinc-950 text-zinc-100 antialiased overflow-x-hidden selection:bg-yellow-400 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
